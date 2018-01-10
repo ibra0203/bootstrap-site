@@ -7,9 +7,7 @@ document.addEventListener("jqLoaded", function(){
           if(collapsed)   
           {
               collapsed =false;
-              $('#nasacontent').collapse('show');
-              alert("hi");
-                
+              $('#nasacontent').collapse('show');   
           }
         });
     });

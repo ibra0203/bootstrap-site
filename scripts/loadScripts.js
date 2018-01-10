@@ -1,4 +1,5 @@
 //hide body until modified in loadContent.js
+
 document.body.style.opacity ="0";
 
 //add script tags automatically to the body, adds the loadContent.js script tag 
@@ -8,6 +9,7 @@ var i;
  var s = document.createElement("script");
 s.setAttribute("src", "scripts/loadContent.js");
 document.body.appendChild(s);
+console.log("hi");
 for(i=0; i<3;i++)
 {   
    scr = document.createElement("script");
@@ -32,12 +34,19 @@ for(i=0; i<3;i++)
    scr.setAttribute("src",src);
    scr.setAttribute("integrity", intg);
    scr.setAttribute("crossorigin", cross);
-   document.body.appendChild(scr);
+   scr.async=false;
+   var scriptsNode = document.body.getElementsByTagName("SCRIPT")[0];
+   document.body.insertBefore(scr, scriptsNode);
+   scr.onload = function(){
+       console.log(this.getAttribute("src"));
+   }
     
    
 }
+;
 var jqEvnt = new CustomEvent("jqLoaded", {bubbles: true, cancelable: true});
 jqScr.onload=function(){
+    console.log(this.getAttribute("src"));
     document.dispatchEvent(jqEvnt);
 };
 /*

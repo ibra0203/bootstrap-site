@@ -3,6 +3,6 @@ $(document).ready(function(){
     /*$.get("sub-content/loaded-header.html",function(_c){
         $(body).prepend(_c);
     });*/
-    $(".test").load("loaded-header.html");
+    $(".test").load("./scripts/loaded-header.html #header1");
 
 });

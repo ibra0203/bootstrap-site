@@ -3,12 +3,6 @@ $(document).ready(function(){
     /*$.get("sub-content/loaded-header.html",function(_c){
         $(body).prepend(_c);
     });*/
-    $(".test").load("loaded-header.html", function( response, status, xhr ) {
-      if ( status == "error" ) {
-        var msg = "Sorry but there was an error: ";
-        alert( msg + xhr.status + " " + xhr.statusText );
-      }
-      else { alert("Done")}
-    });
+    $(".test").load("loaded-header.html");
 
 });

@@ -1,1 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Ovo');
+
+$col1: #F7F0ED;
+$col2: #C4AAA5;
+$col3: #857676;
+$col4: #9C838F;
+$col5: #3D333D;
+
+$font-family-serif: 'Ovo', 'Times New Roman', serif !default;
+$font-family-sans-serif: 'Libre Franklin', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$headings-font-family: $font-family-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+$jumbotron-bg: $col1 !default;
+$theme-colors: (
+  "primary":    $col5,
+  "secondary":  $col4,
+  "info":       $col2,
+  "light":      $col2,
+  "success":    $col5,
+  "dark":       $col3
+);
+body {
+  padding-top: 3.5rem;
+}
 @import "bootstrap/scss/bootstrap";
+
+

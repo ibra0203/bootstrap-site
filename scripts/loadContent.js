@@ -2,6 +2,7 @@
 var fr = document.createElement("iframe");
 fr.setAttribute("src", "sub-content/loaded-content.html");
 fr.setAttribute("id", "tempFrame");
+fr.style.opacity ="0";
 document.body.appendChild(fr);
 
 var hasFrLoaded=false;
@@ -13,7 +14,8 @@ fr.onload =function(){
 };
 
 document.addEventListener("jqLoaded", loadedJQ);
-function loadedJQ(){ 
+function loadedJQ(){
+   
     hasJQLoaded=true;
     if(hasFrLoaded)
     {
@@ -27,6 +29,7 @@ function loadedJQ(){
                _foot.insertBefore($(this));    
                }
         });
-        document.body.style.opacity ="1";
+    
+        
     }
 };

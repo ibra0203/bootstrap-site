@@ -20,9 +20,30 @@ $theme-colors: (
   "success":    $col5,
   "dark":       $col3
 );
+@import "bootstrap/scss/bootstrap";
+@import "cards";
 body {
   padding-top: 3.5rem;
 }
-@import "bootstrap/scss/bootstrap";
+footer{
+    margin-bottom: 1.5rem;
+}
+.btn-block{
+    height: 4rem;
+    
+    b{
+      font-size: 2rem;  
+    }
+}
+#emailForm{
+    
+    margin: 0.5rem auto;
+    form{background-color: $gray-100;
+    padding: 3rem;
+    border: $gray-400 solid 0.2rem;}
+    label{
+        font-weight: 600;
+    }
+}
 
 

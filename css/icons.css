@@ -1,0 +1,13 @@
+.iconic{
+    opacity: 0.5;
+    color: #9C838F;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+   
+}
+.iconic:hover{
+    opacity: 1;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    
+}
